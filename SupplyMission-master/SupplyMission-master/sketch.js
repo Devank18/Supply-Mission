@@ -55,10 +55,9 @@ function draw() {
 }
 
 function keyPressed() {
- if (keyCode === DOWN_ARROW) {
-	helicopterSprite.bounceoff("ground")
-	packageSprite.bounceoff("ground")
-    
+     if (keyCode === DOWN_ARROW)
+  { 
+     Matter.Body.setStatic(packageBody,false);
   }
 }
 
